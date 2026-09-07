@@ -1,0 +1,52 @@
+```css
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 5%;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary-button {
+  border: none;
+  background: #111;
+  color: white;
+}
+
+.secondary-button {
+  background: white;
+  color: #111;
+  border: 1px solid #111;
+}
+```
