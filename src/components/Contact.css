@@ -44,11 +44,11 @@
 }
 
 .contact-button {
-  margin-top: 8px;
-  padding: 12px 24px;
+  margin: 8px auto 0;
   border: none;
-  border-radius: 8px;
   background: #111;
+  padding: 12px 20px;
+  width: 200px;
   color: white;
   cursor: pointer;
   font-size: 15px;

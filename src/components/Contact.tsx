@@ -16,9 +16,9 @@ export default function Contact() {
         </form>
 
         <div className="contact-details">
-          <p><strong>Phone:</strong> 0800 123 4567</p>
-          <p><strong>Email:</strong> info@yourwindscreen.co</p>
-          <p><strong>Hours:</strong> Mon–Sat, 8am–6pm</p>
+          <p><strong>Phone:</strong> 0700 123 4567</p>
+          <p><strong>Email:</strong> safeview</p>
+          <p><strong>Hours:</strong> Mon–Fri, 8am–4pm Sat,8am-1pmS</p>
         </div>
       </div>
     </section>

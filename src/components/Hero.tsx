@@ -4,8 +4,8 @@ function Hero() {
     return (
         <section className="hero">
             <div className="hero-content">
-                <h1>Get a life!</h1>
-                <p>And protect your energy.</p>
+                <h1>Safe-view Windscreens</h1>
+                <p>Protect your vision and enhance your driving experience.</p>
 
                 <div className="hero-vuttons">
                     <button className="primary-button">
