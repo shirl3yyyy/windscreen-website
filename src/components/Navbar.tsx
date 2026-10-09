@@ -6,7 +6,7 @@ function Navbar() {
    <div className="navbar-container"> 
 
     <a href="/" className="logo">
-     YourLogo
+     SafeView
       </a>
       
        <div className="nav-links">
