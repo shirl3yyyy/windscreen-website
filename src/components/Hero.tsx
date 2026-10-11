@@ -1,31 +1,11 @@
-
 import "./Hero.css";
-import { useState, useEffect } from "react";
-
-import windscreen1 from "../assets/windscreen1.jpg";
-import windscreen2 from "../assets/windscreen2.jpg";
 
 function Hero() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const images = [windscreen1, windscreen2];
-  console.log(images);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide(
-        (currentSlide) => (currentSlide + 1) % images.length
-      );
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
-
   return (
     <section
       className="hero"
       style={{
-        backgroundImage: `url(${images[currentSlide]})`,
+        backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdf8m20ZIWNlhO3WftJa0tqRzT-G6qRdCUO2Ue3GexUw&s=10')",
       }}
     >
       <div className="hero-overlay"></div>
@@ -48,4 +28,3 @@ function Hero() {
 }
 
 export default Hero;
-

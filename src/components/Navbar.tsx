@@ -6,7 +6,8 @@ function Navbar() {
    <div className="navbar-container"> 
 
     <a href="/" className="logo">
-     SafeView
+     <span className="logo-blue">Safe</span>
+     <span className="logo-green">View</span>
       </a>
       
        <div className="nav-links">
