@@ -5,7 +5,7 @@ function Hero() {
     <section
       className="hero"
       style={{
-        backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdf8m20ZIWNlhO3WftJa0tqRzT-G6qRdCUO2Ue3GexUw&s=10')",
+        backgroundImage: "url('https://i.pinimg.com/736x/10/81/6f/10816ff533d3d1b8f004d100fa0832e3.jpg')",
       }}
     >
       <div className="hero-overlay"></div>
