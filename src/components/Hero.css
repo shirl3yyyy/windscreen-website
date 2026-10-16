@@ -64,6 +64,28 @@
   transform: translateY(-3px);
 }
 
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.hero-quote-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #007bff, #00c853);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-quote-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.25);
+}
+
+
 @media (max-width: 768px) {
   .hero {
     min-height: 75vh;

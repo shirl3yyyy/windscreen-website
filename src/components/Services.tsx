@@ -7,50 +7,92 @@ interface Service {
   icon?: string;
 }
 
-const services: Service[] = [
-    {
-        id: "1",
-        title: "Windscreen Replacement",
-        description: "Full windscreen replacement using OEM-quality glass, fitted by certified technicians."
-    },
-    
-    {
-        id: "2",
-        title: "Mobile fitting",
-        description: "We come to your home or office",
-    },
-
-    {
-        id: "3",
-        title: "Side & Rear Window Replacement",
-        description: "Replacement for door glass and rear windscreens on most makes and models."
-    },
-
-    {
-        id: "4",
-        title: "Insurance Claims Assistance",
-        description: "We handle the paperwork directly with your insurer where possible."
-
-    },
+const services = [
+  {
+    icon: "🔧",
+    title: "Windscreen Repair",
+    description:
+      "We repair eligible chips and cracks to help restore visibility and prevent further damage.",
+  },
+  {
+    icon: "🚘",
+    title: "Windscreen Replacement",
+    description:
+      "Replacement services for damaged windscreens, with attention to fit, safety, and quality.",
+  },
+  {
+    icon: "🪟",
+    title: "Car Window Replacement",
+    description:
+      "Professional replacement of damaged vehicle side and rear windows.",
+  },
+  {
+    icon: "🛡️",
+    title: "Insurance Assistance",
+    description:
+      "We help customers understand the documentation and process involved in insurance claims.",
+  },
+  {
+    icon: "✨",
+    title: "Glass Polishing",
+    description:
+      "Glass care services designed to improve clarity where the condition of the glass allows.",
+  },
+  {
+    icon: "🔍",
+    title: "Glass Inspection",
+    description:
+      "We assess visible damage and help you understand the suitable repair or replacement options.",
+  },
 ];
 
-export default function Services() {
+function Services() {
   return (
-    <section className="services" id="services">
+    <section className="services">
       <div className="services-header">
-        <h2>Our Services</h2>
-        <p>Windscreen repair and replacement you can trust</p>
+        <span className="services-label">WHAT WE DO</span>
+        <h2>Our Windscreen Services</h2>
+        <p>
+          Reliable vehicle glass solutions to help you drive
+          with greater clarity and confidence.
+        </p>
       </div>
 
-        <div className="services-grid">
+      <div className="services-grid">
         {services.map((service) => (
-          <div className="service-card" key={service.id}>
+          <article className="service-card" key={service.title}>
+            <div className="service-icon" aria-hidden="true">
+              {service.icon}
+            </div>
+
             <h3>{service.title}</h3>
             <p>{service.description}</p>
-          </div>
+
+            <a href="/contact" className="service-link">
+              Enquire now <span aria-hidden="true">→</span>
+            </a>
+          </article>
         ))}
       </div>
+
+
+<div className="whatsapp-contact">
+  <h3>Need our services?</h3>
+  <p>Contact us on WhatsApp for enquiries and bookings.</p>
+
+  <a
+    href="https://wa.me/254757520754"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="whatsapp-button"
+  >
+    💬 Chat with us on WhatsApp
+  </a>
+</div>
+
+
     </section>
   );
 }
 
+export default Services;
