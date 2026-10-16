@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 80px 8%;
+  padding: 100px 8% 80px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,82 +14,91 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(14, 80, 235, 0.1),
-    rgba(16, 147, 70, 0.75)
-  );
 }
 
 .hero-content {
   position: relative;
-  z-index: 0;
-  max-width: 500px;
+  z-index: 1;
+  width: 100%;
+  max-width: 750px;
   text-align: left;
   color: white;
   margin-right: auto;
 }
 
+.hero-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #75f0c2;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
 .hero-content h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 900;
-  margin-bottom: 20px;
-  line-height: 1.2;
+  max-width: 750px;
+  margin: 0 0 20px;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  margin-bottom: 30px;
+  max-width: 600px;
+  margin: 0 0 30px;
+  font-size: 1.15rem;
+  line-height: 1.8;
 }
 
 .hero-buttons {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: flex-start;
-}
-
-.primary-button {
-  background: linear-gradient(90deg, #2563EB, #16A34A);
-  color: white;
-  border: none;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.primary-button:hover {
-  transform: translateY(-3px);
-}
-
-.hero-buttons {
+  gap: 16px;
   margin-top: 30px;
 }
 
-.hero-quote-button {
-  display: inline-block;
-  padding: 15px 30px;
-  background: linear-gradient(135deg, #007bff, #00c853);
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
+.hero-quote-button,
+.hero-services-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 24px;
   border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.hero-quote-button {
+  background: linear-gradient(135deg, #007bff, #00b878);
+  color: white;
 }
 
 .hero-quote-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.25);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
 }
 
+.hero-services-button {
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.hero-services-button:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.18);
+}
 
 @media (max-width: 768px) {
   .hero {
     min-height: 75vh;
-    padding: 60px 6%;
+    padding: 100px 6% 60px;
+    background-position: center;
   }
 
   .hero-content {
@@ -97,10 +106,23 @@
   }
 
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2.2rem, 8vw, 3.2rem);
   }
 
   .hero-content p {
     font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-quote-button,
+  .hero-services-button {
+    width: 100%;
   }
 }

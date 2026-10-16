@@ -9,12 +9,6 @@ interface Service {
 
 const services = [
   {
-    icon: "🔧",
-    title: "Windscreen Repair",
-    description:
-      "We repair eligible chips and cracks to help restore visibility and prevent further damage.",
-  },
-  {
     icon: "🚘",
     title: "Windscreen Replacement",
     description:
@@ -48,7 +42,7 @@ const services = [
 
 function Services() {
   return (
-    <section className="services">
+    <section className="services" id="services">
       <div className="services-header">
         <span className="services-label">WHAT WE DO</span>
         <h2>Our Windscreen Services</h2>
@@ -68,7 +62,7 @@ function Services() {
             <h3>{service.title}</h3>
             <p>{service.description}</p>
 
-            <a href="/contact" className="service-link">
+            <a href="#contact" className="service-link">
               Enquire now <span aria-hidden="true">→</span>
             </a>
           </article>
