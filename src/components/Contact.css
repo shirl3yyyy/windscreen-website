@@ -1,68 +1,91 @@
-.contact {
-  scroll-margin-top: 0px;
-  padding: 80px 5%;
-  background: #f9f9f9;
+.contact-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #008f70;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
-.contact-content {
+.contact-description {
   max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.contact-content > p {
-  font-size: 17px;
+  margin: 0 auto 30px;
+  color: #64748b;
   line-height: 1.7;
-  margin-bottom: 30px;
-  color: #555;
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+  margin: 30px auto;
   text-align: left;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 12px 14px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 15px;
-  font-family: inherit;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #111;
+.form-group label {
+  color: #263445;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dbe3eb;
+  border-radius: 8px;
+  background: #fff;
+  color: #263445;
+  font: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: 2px solid #008f70;
+  outline-offset: 2px;
+}
+
+.form-group textarea {
+  resize: vertical;
 }
 
 .contact-button {
-  margin: 8px auto 0;
+  padding: 15px 24px;
   border: none;
-  background: #111;
-  padding: 12px 20px;
-  width: 200px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #007bff, #00a878);
   color: white;
+  font-size: 1rem;
+  font-weight: 700;
   cursor: pointer;
-  font-size: 15px;
-  transition: background 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .contact-button:hover {
-  background: #333;
+  transform: translateY(-2px);
 }
 
 .contact-details {
-  margin-top: 30px;
-  font-size: 15px;
+  margin-top: 35px;
   line-height: 1.8;
-  color: #444;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 60px 20px;
+    scroll-margin-top: 90px;
+  }
+
+  .contact-form {
+    gap: 16px;
+  }
 }
