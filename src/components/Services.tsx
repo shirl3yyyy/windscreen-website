@@ -1,38 +1,36 @@
 import "./Services.css";
 
-interface Service {
-  id: string;
-  title: string;
-  description: string;
-  icon?: string;
-}
-
 const services = [
   {
+    id: "windscreen-replacement",
     icon: "🚘",
     title: "Windscreen Replacement",
     description:
       "Replacement services for damaged windscreens, with attention to fit, safety, and quality.",
   },
   {
+    id: "car-window-replacement",
     icon: "🪟",
     title: "Car Window Replacement",
     description:
       "Professional replacement of damaged vehicle side and rear windows.",
   },
   {
+    id: "insurance-assistance",
     icon: "🛡️",
     title: "Insurance Assistance",
     description:
       "We help customers understand the documentation and process involved in insurance claims.",
   },
   {
+    id: "glass-polishing",
     icon: "✨",
     title: "Glass Polishing",
     description:
       "Glass care services designed to improve clarity where the condition of the glass allows.",
   },
   {
+    id: "glass-inspection",
     icon: "🔍",
     title: "Glass Inspection",
     description:

@@ -86,17 +86,8 @@ export default function Contact() {
           </button>
         </form>
 
-        <div className="contact-details">
-          <p>
-            <strong>Phone:</strong> Replace with your business phone number
-          </p>
-          <p>
-            <strong>Email:</strong> Replace with your business email
-          </p>
-          <p>
-            <strong>Hours:</strong> Add your confirmed business hours
-          </p>
-        </div>
+       
+
       </div>
     </section>
   );
