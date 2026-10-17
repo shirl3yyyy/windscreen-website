@@ -6,7 +6,7 @@ function Hero() {
       className="hero"
       style={{
         backgroundImage:
-          "url('https://i.pinimg.com/736x/10/81/6f/10816ff533d3d1b8f004d100fa0832e3.jpg')",
+          "url('https://i.pinimg.com/1200x/a3/da/18/a3da18188ad26d316836763ae06cc787.jpg')",
       }}
     >
       <div className="hero-overlay"></div>
