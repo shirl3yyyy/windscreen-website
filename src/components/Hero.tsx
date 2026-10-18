@@ -1,14 +1,9 @@
+
 import "./Hero.css";
 
 function Hero() {
   return (
-    <section
-      className="hero"
-      style={{
-        backgroundImage:
-          "url('https://i.pinimg.com/1200x/a3/da/18/a3da18188ad26d316836763ae06cc787.jpg')",
-      }}
-    >
+    <section className="hero">
       <div className="hero-overlay"></div>
 
       <div className="hero-content">
@@ -16,9 +11,7 @@ function Hero() {
           YOUR VEHICLE GLASS SPECIALISTS
         </span>
 
-        <h1>
-          Safe-view Windscreens
-        </h1>
+        <h1>Safe-view Windscreens</h1>
 
         <p>
           Quality windscreen and vehicle glass replacement
@@ -33,6 +26,35 @@ function Hero() {
           <a href="#services" className="hero-services-button">
             Explore Our Services
           </a>
+        </div>
+      </div>
+
+      <div className="weather-panel">
+        <div className="weather-heading">
+          <span>BUILT FOR EVERY WEATHER</span>
+          <p>Protection through every journey</p>
+        </div>
+
+        <div className="weather-conditions">
+          <div className="weather-item">
+            <span>☀️</span>
+            <p>Sun</p>
+          </div>
+
+          <div className="weather-item">
+            <span>🌧️</span>
+            <p>Rain</p>
+          </div>
+
+          <div className="weather-item">
+            <span>❄️</span>
+            <p>Snow</p>
+          </div>
+
+          <div className="weather-item">
+            <span>💨</span>
+            <p>Wind</p>
+          </div>
         </div>
       </div>
     </section>
